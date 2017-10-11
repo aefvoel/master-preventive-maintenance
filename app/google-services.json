@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "237689565487",
+    "firebase_url": "https://mpmproject-303cb.firebaseio.com",
+    "project_id": "mpmproject-303cb",
+    "storage_bucket": "mpmproject-303cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237689565487:android:57f5b1ff704824e6",
+        "android_client_info": {
+          "package_name": "tiregdev.mpm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237689565487-hbam58nh8mg8guubictnvmnsk61tts06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tiregdev.mpm",
+            "certificate_hash": "504fde3218b5c3f31023296b5636bef41fc8a63a"
+          }
+        },
+        {
+          "client_id": "237689565487-lee6i6013eolkv4tlav006pt3gu8mlfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfZh_QyKL0CWmUKdqsYCO9rMln80bj7xA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237689565487-lee6i6013eolkv4tlav006pt3gu8mlfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

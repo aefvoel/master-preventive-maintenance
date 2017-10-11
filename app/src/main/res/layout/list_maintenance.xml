@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iconSet"
+        android:contentDescription="@string/imgDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueGrey_light"
+        android:padding="5dp"
+        android:src="@drawable/ic_settings_applications_white_24dp"/>
+
+    <TextView
+        android:id="@+id/namaPerusahaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iconSet"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Victory Company"/>
+
+    <TextView
+        android:id="@+id/statusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status :"
+        android:layout_toEndOf="@id/iconSet"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/namaPerusahaan"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@color/colorGreen500"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/statusTxt"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/namaPerusahaan"/>
+
+</RelativeLayout>

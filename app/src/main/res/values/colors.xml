@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAbu">#b7b7b7</color>
+    <color name="colorPutih">#fff</color>
+    <color name="colorHitam">#000</color>
+    <color name="colorBG">#fafafa</color>
+    <color name="colorGray">#303030</color>
+
+    <color name="colorGreen500">#4CAF50</color>
+    <color name="colorPink50">#FCE4EC</color>
+    <color name="colorPink100">#F8BBD0</color>
+    <color name="colorPink200">#F48FB1</color>
+    <color name="colorGray100">#F5F5F5</color>
+    <color name="colorGray200">#EEEEEE</color>
+    <color name="colorGray300">#E0E0E0</color>
+    <color name="colorGray400">#BDBDBD</color>
+    <color name="colorGray500">#9E9E9E</color>
+    <color name="colorGray600">#757575</color>
+    <color name="colorGray800">#424242</color>
+    <color name="colorCyan100">#B2EBF2</color>
+    <color name="colorCyan300">#4DD0E1</color>
+    <color name="colorCyan300_50">#504dd0e1</color>
+    <color name="colorCyan300_AA">#aa4dd0e1</color>
+    <color name="colorCyan500">#00BCD4</color>
+    <color name="colorTeal500">#009688</color>
+    <color name="colorTeal800">#00695C</color>
+    <color name="colorAmber800">#FF8F00</color>
+    <color name="colorAmber500">#FFC107</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_39">#39ffffff</color>
+    <color name="colorBlack_40">#28000000</color>
+    <color name="transperent">#00000000</color>
+
+    <color name="colorBlueGrey">#245294</color>
+    <color name="colorBlueGrey_light">#8daddc</color>
+    <color name="table_header_text">#CCFFFFFF</color>
+
+    <color name="colorLogo">#D6E030</color>
+    <color name="colorBlackTransparent">#9c000000</color>
+    <color name="colorCyanTransparent">#4e00BCD4</color>
+    <color name="colorButtonSignup">#6300838f</color>
+    <color name="colorBackgroundChat">#e9e3dd</color>
+</resources>

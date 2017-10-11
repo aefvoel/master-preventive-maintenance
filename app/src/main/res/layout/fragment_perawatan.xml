@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/imgDesc"
+            android:src="@drawable/alber" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perawatan_desc" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.5"
+            android:background="@color/colorGray" />
+
+        <EditText
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/perawatan_1"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/perawatan_2"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/perawatan_3"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/perawatan_4"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/p5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/perawatan_5"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/p6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/perawatan_6"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/p7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/perawatan_7"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/perawatan_8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/p8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/perawatan_tgl"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/perawatan_until"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/p9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/perawatan_tgl"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/p10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/daftarPart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                style="?android:actionButtonStyle"
+                android:text="@string/btn_perawatan1"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/cekBiaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                style="?android:actionButtonStyle"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="@string/btn_perawatan2"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_primary"
+            style="?android:actionButtonStyle"
+            android:text="@string/btn_perawatan3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</ScrollView>

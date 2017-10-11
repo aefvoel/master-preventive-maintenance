@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MPM</string>
+    <string name="app">Master Preventive\nMaintenance (MPM)</string>
+    <string name="perawatan">Perawatan Unit</string>
+    <string name="list_teknisi">Daftar Teknisi</string>
+    <string name="list_menten">List Maintenance Anda</string>
+    <string name="about">About MPM</string>
+    <string name="search">Search</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="perawatan_desc">
+        Untuk dapat melakukan pemesanan jasa  perawatan alat berat anda, isilah data dibawah ini
+        agar kami dapat mengetahui apa yang anda butuhkan
+    </string>
+    <string name="perawatan_1">Nama Perusahaan/Pribadi</string>
+    <string name="perawatan_2">Alamat Perusahaan/Pribadi</string>
+    <string name="perawatan_3">Email Perusahaan/Pribadi</string>
+    <string name="perawatan_4">Telepon Perusahaan/Pribadi</string>
+    <string name="perawatan_5">Jenis Unit</string>
+    <string name="perawatan_6">Serial Number</string>
+    <string name="perawatan_7">Jam Kerja/hour</string>
+    <string name="perawatan_8">Tanggal Booking</string>
+    <string name="perawatan_tgl">dd/mm/yyyy</string>
+    <string name="perawatan_until">sampai</string>
+    <string name="perawatan_9">Daftar Teknisi</string>
+    <string name="perawatan_10">Nomor Order</string>
+    <string name="btn_perawatan1">Cek Part</string>
+    <string name="btn_perawatan2">Cek Biaya</string>
+    <string name="btn_perawatan3">Submit</string>
+
+    <string name="list_teknisi_desc">
+        Berikut ini adalah daftar dan informasi teknisi yang anda butuhkan
+    </string>
+    <string name="kode_teknisi">Kode Teknisi</string>
+    <string name="no_teknisi">No.</string>
+    <string name="nama_teknisi">Nama</string>
+    <string name="remark_teknisi">Remark</string>
+    <string name="nama">Nama</string>
+    <string name="Jabatan">Jabatan</string>
+    <string name="rating">Rating</string>
+    <string name="umur">Umur</string>
+    <string name="status">Status</string>
+    <string name="jobschedule">Job Schedule</string>
+    <string name="biaya">Biaya/hour</string>
+    <string name="history">History</string>
+
+    <string name="about_desc">
+        Master Preventive Maintenance (MPM) adalah sebuah aplikasi yang sangat berguna bagi Customer pribadi,
+        pengusaha, atau perusahan yang menggunakan dan mempunyai alat berat. Aplikasi ini memudahkan customer
+        alat berat yang membutuhkan jasa perawatan unit dengan cara yang mudah, cepat dan dengan anggaran yang
+        dapat dipilih seseuai dengan kemampuan perusahaan.
+    </string>
+
+    <string name="developer">
+        <b>Founded : September 2017</b>\n
+        Develeped by TiregDev
+    </string>
+
+    <string name="list_maintenance_desc">
+        Berikut ini adalah daftar perawatan unit Anda selama ini
+    </string>
+
+    <string name="imgDesc">MPM Image</string>
+
+</resources>
