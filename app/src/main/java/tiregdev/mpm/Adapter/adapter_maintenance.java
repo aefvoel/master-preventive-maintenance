@@ -11,8 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
 
+import tiregdev.mpm.Activity.detail_list_maintenance;
 import tiregdev.mpm.Model.PerawatanUnit;
-import tiregdev.mpm.Model.item_maintenance;
 import tiregdev.mpm.R;
 
 /**
@@ -39,6 +39,7 @@ public class adapter_maintenance extends RecyclerView.Adapter<adapter_maintenanc
     @Override
     public void onBindViewHolder(adapter_maintenance.holder_maintenance holder, int position){
         holder.nama.setText(itemList.get(position).getNama());
+        holder.noOrder.setText(itemList.get(position).getNoOrder());
         holder.status.setText(itemList.get(position).getStatus());
     }
 
@@ -67,19 +68,41 @@ public class adapter_maintenance extends RecyclerView.Adapter<adapter_maintenanc
         return arr;
     }
 
+    public void clear() {
+        itemList.clear();
+        notifyDataSetChanged();
+    }
+
     public class holder_maintenance extends RecyclerView.ViewHolder {
-        public TextView nama, status;
+        public TextView nama, noOrder ,status;
 
         public holder_maintenance(View itemView){
             super(itemView);
 
             nama = (TextView)itemView.findViewById(R.id.namaPerusahaan);
+            noOrder = (TextView)itemView.findViewById(R.id.noOrder);
             status = (TextView)itemView.findViewById(R.id.status);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Context context = v.getContext();
-                    Toast.makeText(context, "SUKSES", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(context, detail_list_maintenance.class);
+                    i.putExtra("NAMA", itemList.get(getAdapterPosition()).getNama());
+                    i.putExtra("ALAMAT", itemList.get(getAdapterPosition()).getAlamat());
+                    i.putExtra("NMR_ORDER", itemList.get(getAdapterPosition()).getNoOrder());
+                    i.putExtra("EMAIL", itemList.get(getAdapterPosition()).getEmail());
+                    i.putExtra("TLP", itemList.get(getAdapterPosition()).getTelepon());
+                    i.putExtra("JENIS_UNIT", itemList.get(getAdapterPosition()).getJenisUnit());
+                    i.putExtra("SERIAL_NUMBER", itemList.get(getAdapterPosition()).getSerialNumber());
+                    i.putExtra("JAM_KERJA", itemList.get(getAdapterPosition()).getJamKerja());
+                    i.putExtra("START_BOOKING", itemList.get(getAdapterPosition()).getStartBooking());
+                    i.putExtra("FINISH_BOOKING", itemList.get(getAdapterPosition()).getFinishBooking());
+                    i.putExtra("STATUS", itemList.get(getAdapterPosition()).getStatus());
+                    i.putExtra("ORDER_OIL", itemList.get(getAdapterPosition()).getJumlahOil());
+                    i.putExtra("ORDER_OIL_FILTER", itemList.get(getAdapterPosition()).getJumlahOilFilter());
+                    i.putExtra("TOTAL_PART", itemList.get(getAdapterPosition()).getTotalPart());
+                    i.putExtra("TOTAL_BIAYA", itemList.get(getAdapterPosition()).getTotalBiaya());
+                    context.startActivity(i);
                 }
             });
         }

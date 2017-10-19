@@ -5,10 +5,9 @@ package tiregdev.mpm.Model;
  */
 
 public class PerawatanUnit {
-    private String nama, alamat, email, telepon, jenisUnit, serialNumber, jamKerja, startBooking, finishBooking, idTeknisi, tglSubmit, status;
+    private String nama, alamat, email, telepon, jenisUnit, serialNumber, jamKerja, startBooking, finishBooking, noOrder, tglSubmit, status, jumlahOil, jumlahOilFilter, totalPart, totalBiaya;
 
-
-    public PerawatanUnit(String nama, String alamat, String email, String telepon, String jenisUnit, String serialNumber, String jamKerja, String startBooking, String finishBooking, String idTeknisi, String tglSubmit, String status) {
+    public PerawatanUnit(String nama, String alamat, String email, String telepon, String jenisUnit, String serialNumber, String jamKerja, String startBooking, String finishBooking, String noOrder, String tglSubmit, String status, String jumlahOil, String jumlahOilFilter, String totalPart, String totalBiaya) {
         this.nama = nama;
         this.alamat = alamat;
         this.email = email;
@@ -18,12 +17,16 @@ public class PerawatanUnit {
         this.jamKerja = jamKerja;
         this.startBooking = startBooking;
         this.finishBooking = finishBooking;
-        this.idTeknisi = idTeknisi;
+        this.noOrder = noOrder;
         this.tglSubmit = tglSubmit;
         this.status = status;
+        this.jumlahOil = jumlahOil;
+        this.jumlahOilFilter = jumlahOilFilter;
+        this.totalPart = totalPart;
+        this.totalBiaya = totalBiaya;
     }
 
-    public PerawatanUnit(){
+    public PerawatanUnit() {
 
     }
 
@@ -99,12 +102,12 @@ public class PerawatanUnit {
         this.finishBooking = finishBooking;
     }
 
-    public String getIdTeknisi() {
-        return idTeknisi;
+    public String getNoOrder() {
+        return noOrder;
     }
 
-    public void setIdTeknisi(String idTeknisi) {
-        this.idTeknisi = idTeknisi;
+    public void setNoOrder(String noOrder) {
+        this.noOrder = noOrder;
     }
 
     public String getTglSubmit() {
@@ -121,5 +124,37 @@ public class PerawatanUnit {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getJumlahOil() {
+        return jumlahOil;
+    }
+
+    public void setJumlahOil(String jumlahOil) {
+        this.jumlahOil = jumlahOil;
+    }
+
+    public String getJumlahOilFilter() {
+        return jumlahOilFilter;
+    }
+
+    public void setJumlahOilFilter(String jumlahOilFilter) {
+        this.jumlahOilFilter = jumlahOilFilter;
+    }
+
+    public String getTotalPart() {
+        return totalPart;
+    }
+
+    public void setTotalPart(String totalPart) {
+        this.totalPart = totalPart;
+    }
+
+    public String getTotalBiaya() {
+        return totalBiaya;
+    }
+
+    public void setTotalBiaya(String totalBiaya) {
+        this.totalBiaya = totalBiaya;
     }
 }

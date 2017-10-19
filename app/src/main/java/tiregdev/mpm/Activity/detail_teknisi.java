@@ -83,7 +83,7 @@ public class detail_teknisi extends AppCompatActivity {
         placePicture = (ImageView) findViewById(R.id.image);
         placePicture.setImageResource(R.drawable.teknisi);
 
-        collapsingToolbar.setTitle("Abdul Halim");
+        collapsingToolbar.setTitle(getIntent().getExtras().getString("NAMA_KEY"));
         collapsingToolbar.setExpandedTitleColor(getResources().getColor(R.color.transperent));
         collapsingToolbar.setCollapsedTitleTextColor(Color.rgb(255, 255, 255));
     }

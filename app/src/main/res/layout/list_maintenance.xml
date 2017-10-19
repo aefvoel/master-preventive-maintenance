@@ -22,7 +22,17 @@
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="Victory Company"/>
+        android:text="Pertamina"/>
+
+    <TextView
+        android:id="@+id/noOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iconSet"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/namaPerusahaan"
+        android:textStyle="bold"
+        android:text="00001"/>
 
     <TextView
         android:id="@+id/statusTxt"
@@ -30,9 +40,8 @@
         android:layout_height="wrap_content"
         android:text="status :"
         android:layout_toEndOf="@id/iconSet"
-        android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
-        android:layout_below="@id/namaPerusahaan"/>
+        android:layout_below="@id/noOrder"/>
 
     <TextView
         android:id="@+id/status"
@@ -40,9 +49,8 @@
         android:layout_height="wrap_content"
         android:text="Clear"
         android:textColor="@color/colorGreen500"
-        android:layout_marginTop="5dp"
         android:layout_toEndOf="@id/statusTxt"
         android:layout_marginStart="5dp"
-        android:layout_below="@id/namaPerusahaan"/>
+        android:layout_below="@id/noOrder"/>
 
 </RelativeLayout>

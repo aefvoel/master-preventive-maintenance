@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.detail_teknisi"></activity>
+        <activity android:name=".Activity.detail_teknisi" />
+        <activity android:name=".Activity.detail_list_maintenance"
+            android:label="Detail Maintenance"/>
     </application>
 
 </manifest>
