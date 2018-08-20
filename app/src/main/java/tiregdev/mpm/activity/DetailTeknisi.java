@@ -1,4 +1,4 @@
-package tiregdev.mpm.Activity;
+package tiregdev.mpm.activity;
 
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import tiregdev.mpm.R;
 
-public class detail_teknisi extends AppCompatActivity {
+public class DetailTeknisi extends AppCompatActivity {
 
     ImageView placePicture;
 
@@ -99,7 +99,7 @@ public class detail_teknisi extends AppCompatActivity {
             case android.R.id.home:
                 // todo: goto back activity from here
 
-                detail_teknisi.this.finish();
+                DetailTeknisi.this.finish();
                 return true;
 
             default:

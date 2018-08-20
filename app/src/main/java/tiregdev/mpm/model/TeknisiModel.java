@@ -1,15 +1,15 @@
-package tiregdev.mpm.Model;
+package tiregdev.mpm.model;
 
 /**
  * Created by Muhammad63 on 10/5/2017.
  */
 
-public class item_teknisi {
+public class TeknisiModel {
 
     private String nama, kode, jabatan;
     private int img;
 
-    public item_teknisi(String nama, String kode, String jabatan, int img) {
+    public TeknisiModel(String nama, String kode, String jabatan, int img) {
         this.nama = nama;
         this.kode = kode;
         this.jabatan = jabatan;

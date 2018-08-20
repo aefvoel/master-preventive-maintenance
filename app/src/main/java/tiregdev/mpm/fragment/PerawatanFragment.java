@@ -1,7 +1,6 @@
-package tiregdev.mpm.Fragment;
+package tiregdev.mpm.fragment;
 
 import android.app.DatePickerDialog;
-import android.location.LocationListener;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,14 +28,14 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import tiregdev.mpm.Model.PerawatanUnit;
+import tiregdev.mpm.model.PerawatanUnit;
 import tiregdev.mpm.R;
 
 /**
  * Created by Muhammad63 on 10/5/2017.
  */
 
-public class perawatan extends Fragment implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
+public class PerawatanFragment extends Fragment implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
     View v;
     TextView startPinjem, finishPinjam;

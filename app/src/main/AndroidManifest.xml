@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.splash_screen"
+            android:name=".activity.SplashScreen"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.detail_teknisi" />
-        <activity android:name=".Activity.detail_list_maintenance"
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.DetailTeknisi" />
+        <activity android:name=".activity.DetailMaintenance"
             android:label="Detail Maintenance"/>
     </application>
 

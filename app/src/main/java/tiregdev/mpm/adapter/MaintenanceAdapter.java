@@ -1,4 +1,4 @@
-package tiregdev.mpm.Adapter;
+package tiregdev.mpm.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,38 +6,37 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import java.util.List;
 
-import tiregdev.mpm.Activity.detail_list_maintenance;
-import tiregdev.mpm.Model.PerawatanUnit;
+import tiregdev.mpm.activity.DetailMaintenance;
+import tiregdev.mpm.model.PerawatanUnit;
 import tiregdev.mpm.R;
 
 /**
  * Created by Muhammad63 on 10/6/2017.
  */
 
-public class adapter_maintenance extends RecyclerView.Adapter<adapter_maintenance.holder_maintenance> {
+public class MaintenanceAdapter extends RecyclerView.Adapter<MaintenanceAdapter.holder_maintenance> {
     private List<PerawatanUnit> itemList;
     private Context context;
 
-    public adapter_maintenance(Context context, List<PerawatanUnit> itemList){
+    public MaintenanceAdapter(Context context, List<PerawatanUnit> itemList){
         this.itemList = itemList;
         this.context = context;
     }
 
     @Override
-    public adapter_maintenance.holder_maintenance onCreateViewHolder(ViewGroup parent, int viewType){
+    public MaintenanceAdapter.holder_maintenance onCreateViewHolder(ViewGroup parent, int viewType){
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_maintenance,null);
-        adapter_maintenance.holder_maintenance hn = new adapter_maintenance.holder_maintenance(layoutView);
+        MaintenanceAdapter.holder_maintenance hn = new MaintenanceAdapter.holder_maintenance(layoutView);
         return hn;
     }
 
 
     @Override
-    public void onBindViewHolder(adapter_maintenance.holder_maintenance holder, int position){
+    public void onBindViewHolder(MaintenanceAdapter.holder_maintenance holder, int position){
         holder.nama.setText(itemList.get(position).getNama());
         holder.noOrder.setText(itemList.get(position).getNoOrder());
         holder.status.setText(itemList.get(position).getStatus());
@@ -86,7 +85,7 @@ public class adapter_maintenance extends RecyclerView.Adapter<adapter_maintenanc
                 @Override
                 public void onClick(View v) {
                     Context context = v.getContext();
-                    Intent i = new Intent(context, detail_list_maintenance.class);
+                    Intent i = new Intent(context, DetailMaintenance.class);
                     i.putExtra("NAMA", itemList.get(getAdapterPosition()).getNama());
                     i.putExtra("ALAMAT", itemList.get(getAdapterPosition()).getAlamat());
                     i.putExtra("NMR_ORDER", itemList.get(getAdapterPosition()).getNoOrder());

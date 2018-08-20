@@ -1,4 +1,4 @@
-package tiregdev.mpm.Fragment;
+package tiregdev.mpm.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,15 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.zip.Inflater;
-
 import tiregdev.mpm.R;
 
 /**
  * Created by Muhammad63 on 10/5/2017.
  */
 
-public class home extends Fragment {
+public class HomeFragment extends Fragment {
 
     View v;
 

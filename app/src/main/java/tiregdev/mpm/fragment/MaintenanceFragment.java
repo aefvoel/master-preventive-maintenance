@@ -1,13 +1,11 @@
-package tiregdev.mpm.Fragment;
+package tiregdev.mpm.fragment;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -27,18 +25,15 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import tiregdev.mpm.Adapter.adapter_maintenance;
-import tiregdev.mpm.Adapter.adapter_teknisi;
-import tiregdev.mpm.Model.PerawatanUnit;
-import tiregdev.mpm.Model.Teknisi;
-import tiregdev.mpm.Model.item_teknisi;
+import tiregdev.mpm.adapter.MaintenanceAdapter;
+import tiregdev.mpm.model.PerawatanUnit;
 import tiregdev.mpm.R;
 
 /**
  * Created by Muhammad63 on 10/6/2017.
  */
 
-public class maintenance extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class MaintenanceFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     View v;
     RecyclerView rView;
@@ -46,7 +41,7 @@ public class maintenance extends Fragment implements SwipeRefreshLayout.OnRefres
     private DatabaseReference mDatabase;
     List<PerawatanUnit> list;
     EditText searchEdit;
-    adapter_maintenance rcAdapter;
+    MaintenanceAdapter rcAdapter;
 
     @Nullable
     @Override
@@ -117,7 +112,7 @@ public class maintenance extends Fragment implements SwipeRefreshLayout.OnRefres
 
                 }
 
-                rcAdapter = new adapter_maintenance(getActivity(), list);
+                rcAdapter = new MaintenanceAdapter(getActivity(), list);
                 rView.setAdapter(rcAdapter);
                 swipeRefreshRecyclerList.setRefreshing(false);
             }
@@ -190,7 +185,7 @@ public class maintenance extends Fragment implements SwipeRefreshLayout.OnRefres
                             }
 
                         }
-                        rcAdapter = new adapter_maintenance(getContext(), list);
+                        rcAdapter = new MaintenanceAdapter(getContext(), list);
                         rView.setAdapter(rcAdapter);
                         swipeRefreshRecyclerList.setRefreshing(false);
                     }

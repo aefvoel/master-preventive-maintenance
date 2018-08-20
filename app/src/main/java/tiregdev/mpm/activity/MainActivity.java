@@ -1,9 +1,7 @@
-package tiregdev.mpm.Activity;
+package tiregdev.mpm.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -18,10 +16,10 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import tiregdev.mpm.Fragment.home;
-import tiregdev.mpm.Fragment.maintenance;
-import tiregdev.mpm.Fragment.perawatan;
-import tiregdev.mpm.Fragment.teknisi;
+import tiregdev.mpm.fragment.HomeFragment;
+import tiregdev.mpm.fragment.MaintenanceFragment;
+import tiregdev.mpm.fragment.PerawatanFragment;
+import tiregdev.mpm.fragment.TeknisiFragment;
 import tiregdev.mpm.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,19 +82,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //initializing the fragment object which is selected
         switch (itemId) {
             case R.id.nav_menu1:
-                fragment = new home();
+                fragment = new HomeFragment();
                 title.setText("Home");
                 break;
             case R.id.nav_menu2:
-                fragment = new perawatan();
+                fragment = new PerawatanFragment();
                 title.setText("Perawatan Unit");
                 break;
             case R.id.nav_menu3:
-                fragment = new teknisi();
+                fragment = new TeknisiFragment();
                 title.setText("Daftar Teknisi");
                 break;
             case R.id.nav_menu4:
-                fragment = new maintenance();
+                fragment = new MaintenanceFragment();
                 title.setText("List Maintenance");
                 break;
         }

@@ -1,20 +1,12 @@
-package tiregdev.mpm.Fragment;
+package tiregdev.mpm.fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.text.Editable;
-import android.text.InputFilter;
-import android.text.Spanned;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,16 +23,15 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import tiregdev.mpm.Adapter.adapter_teknisi;
-import tiregdev.mpm.Model.Teknisi;
-import tiregdev.mpm.Model.item_teknisi;
+import tiregdev.mpm.adapter.TeknisiAdapter;
+import tiregdev.mpm.model.Teknisi;
 import tiregdev.mpm.R;
 
 /**
  * Created by Muhammad63 on 10/5/2017.
  */
 
-public class teknisi extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class TeknisiFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     View v;
     SwipeRefreshLayout swipeRefreshRecyclerList;
@@ -48,7 +39,7 @@ public class teknisi extends Fragment implements SwipeRefreshLayout.OnRefreshLis
     private DatabaseReference mDatabase;
     List<Teknisi> list;
     RecyclerView rView;
-    adapter_teknisi rcAdapter;
+    TeknisiAdapter rcAdapter;
 
     @Nullable
     @Override
@@ -109,7 +100,7 @@ public class teknisi extends Fragment implements SwipeRefreshLayout.OnRefreshLis
                 }
 
 
-                rcAdapter = new adapter_teknisi(getContext(), list);
+                rcAdapter = new TeknisiAdapter(getContext(), list);
                 rView.setAdapter(rcAdapter);
                 swipeRefreshRecyclerList.setRefreshing(false);
             }
@@ -168,7 +159,7 @@ public class teknisi extends Fragment implements SwipeRefreshLayout.OnRefreshLis
                             }
 
                         }
-                        rcAdapter = new adapter_teknisi(getContext(), list);
+                        rcAdapter = new TeknisiAdapter(getContext(), list);
                         rView.setAdapter(rcAdapter);
                         swipeRefreshRecyclerList.setRefreshing(false);
                     }

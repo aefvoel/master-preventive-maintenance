@@ -1,4 +1,4 @@
-package tiregdev.mpm.Activity;
+package tiregdev.mpm.activity;
 
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import tiregdev.mpm.R;
 
-public class detail_list_maintenance extends AppCompatActivity {
+public class DetailMaintenance extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +79,7 @@ public class detail_list_maintenance extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // todo: goto back activity from here
-                detail_list_maintenance.this.finish();
+                DetailMaintenance.this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

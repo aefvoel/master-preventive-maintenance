@@ -1,15 +1,13 @@
-package tiregdev.mpm.Activity;
+package tiregdev.mpm.activity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.animation.AlphaAnimation;
-import android.widget.ImageView;
 
 import tiregdev.mpm.R;
 
-public class splash_screen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +25,7 @@ public class splash_screen extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(splash_screen.this,MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this,MainActivity.class);
                     startActivity(intent);
                 }
             }
